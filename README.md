@@ -1,0 +1,3 @@
+# Glumpat
+
+Initial readme. 
