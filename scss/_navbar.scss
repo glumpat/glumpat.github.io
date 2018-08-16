@@ -29,6 +29,29 @@
     font-size: 80%;
     padding: 0.8rem;
   }
+
+
+  .dropdown-menu{
+    background-color: $secondary;
+    a.dropdown-item {
+      color: $white;
+      &:hover {
+        color: $primary;
+        background-color: transparent;
+      }
+      &:active,
+      &:focus {
+        background-color: transparent;
+        color: $white;
+      }
+      &.active {
+        color: $primary;
+        background-color: transparent;
+      }
+    }
+  }
+
+
 }
 @media(min-width:992px) {
   #mainNav {

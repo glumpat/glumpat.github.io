@@ -133,6 +133,29 @@ section h2 {
   padding: 0.8rem;
 }
 
+#mainNav .dropdown-menu {
+  background-color: #2C3E50;
+}
+
+#mainNav .dropdown-menu a.dropdown-item {
+  color: #fff;
+}
+
+#mainNav .dropdown-menu a.dropdown-item:hover {
+  color: #18BC9C;
+  background-color: transparent;
+}
+
+#mainNav .dropdown-menu a.dropdown-item:active, #mainNav .dropdown-menu a.dropdown-item:focus {
+  background-color: transparent;
+  color: #fff;
+}
+
+#mainNav .dropdown-menu a.dropdown-item.active {
+  color: #18BC9C;
+  background-color: transparent;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
