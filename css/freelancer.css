@@ -96,6 +96,10 @@ section h2 {
   line-height: 3.1rem;
 }
 
+.card-item {
+  margin-bottom: 10px;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
