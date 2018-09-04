@@ -4,11 +4,11 @@
 @import "../node_modules/bootstrap/scss/mixins";
 
 a {
-  color: $primary;
+  color: $dark;
   &:focus,
   &:hover,
   &:active {
-    color: darken($primary, 10%);
+    color: darken($dark, 10%);
   }
 }
 
@@ -25,11 +25,11 @@ a {
 }
 
 .text-primary {
-  color: $primary !important;
+  color: $dark !important;
 }
 
 .text-secondary {
-  color: $secondary !important;
+  color: $white !important;
 }
 
 .btn-primary {
