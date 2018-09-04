@@ -96,10 +96,6 @@ section h2 {
   line-height: 3.1rem;
 }
 
-.card-item {
-  margin-bottom: 10px;
-}
-
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -381,7 +377,7 @@ a:focus, a:hover, a:active {
 }
 
 .text-primary {
-  color: #18BC9C !important;
+  color: #db3a34 !important;
 }
 
 .text-secondary {
