@@ -57,41 +57,59 @@ section h2 {
 .card {
   border: 5px solid black;
   border-radius: 0;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.card .card-body {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.card .card-footer {
+  background: white;
+  border-radius: 0 !important;
+  border: none;
+}
+
+.card .card-header {
+  height: 200px;
+  background: white;
+  display: flex;
+}
+
+.card .card-header h2 {
+  margin: auto;
+  line-height: 1em;
+  text-transform: uppercase;
 }
 
 .card:hover {
-  background: red;
+  box-shadow: 8px 8px red;
 }
 
-.card-body {
-  background: black;
-  color: white;
-  border-radius: 0;
+.card:hover .card-header h2 {
+  color: orangered;
 }
 
-.card-body:hover {
-  background: red;
+.btn-link {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  color: black;
 }
 
-.card-header {
-  height: 200px;
-  background: white;
+.btn-link:hover * {
+  color: red;
 }
 
-.card-logo > img {
-  width: auto;
-  height: 200px;
-}
-
-.card-footer {
-  background: black;
-  border-radius: 0px !important;
-}
-
-img {
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+.icon-bar {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 #mainNav {

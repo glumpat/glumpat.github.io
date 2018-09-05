@@ -81,291 +81,328 @@
         <h2 class="text-center text-uppercase mb-5">CLI</h2>
         <h4 class="text-center mb-5">There are so many possibilities to customize your CLI. Make it pretty.
             Make it more useful. Make it fun. Below are a number of projects that do just that.</h4>
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-header">
-                    ZSH
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">Zsh</h5>
-                    <p class="card-text">ZSH is a shell that has a bunch of nice features when compared to bash,
-                        such as better completion and globbing.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="http://www.zsh.org/">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation"
-                       href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27">
-                        Installation
-                    </a>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card ">
+                    <div class="card-header d-flex text-left">
+                        <h2 class="m-auto" style="font-size: 3em">ZSH</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="http://www.zsh.org/" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">ZSH is a shell that has a bunch of nice features when compared to bash,
+                            such as better completion and globbing.</p>
+                    </div>
                 </div>
             </div>
-            <div class=" card">
-                <div class="card-header">
-                    oh-<br>
-                    my-<br>
-                    zsh
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">Oh my zsh</h5>
-                    <p class="card-text h-100">oh my zsh is a plugin management framework for ZSH. Comes with a ton
-                        of plugins included, which is nice. </p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="https://ohmyz.sh/">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation"
-                       href="https://github.com/hschne/dotfiles/blob/cf00ba3599a59c2b637f24096c72573536d15836/home/.zshrc#L13">
-                        Installation
-                    </a>
 
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    antigen
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">Antigen</h5>
-                    <p class="card-text h-100">Another plugin manager for ZSH. More modern than oh-my-zsh and
-                        modular. </p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="http://antigen.sharats.me/">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation"
-                       href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L91-L93">
-                        Installation
-                    </a>
-                </div>
-            </div>
-            
-            <div class="card ">
-                <div class="card-header">
-                    spaceship<br>
-                    prompt
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">Spaceship Prompt</h5>
-                    <p class="card-text h-100">A sweet theme for your prompt. Tons of customizations and great git
-                        support.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="https://denysdovhan.com/spaceship-prompt/">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation"
-                       href="https://github.com/hschne/dotfiles/blob/cf00ba3599a59c2b637f24096c72573536d15836/home/.zshrc#L47">
-                        Installation
-                    </a>
-                </div>
-            </div>
-            <div class="card" id="homeshick">
-                <div class="card-header">
-                    Homeshick
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">Homeshick</h5>
-                    <p class="card-text h-100">Manage your dotfiles using git. No dependencies required, its just
-                        bash. Also see <a href="#">Castles</a>.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="https://github.com/andsens/homeshick">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation" href="#">
-                        Installation
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Configuration" href="#">
-                        Configuration
-                    </a>
-                </div>
-            </div>
-            <div class="card ">
-                <div class="card-header">
-                    The Fuck
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">The Fuck</h5>
-                    <p class="card-text h-100">Magnificent app that corrects your typos. Absolutely required for any
-                        command line.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="https://github.com/nvbn/thefuck">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation" href="#">
-                        Installation
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Configuration" href="#">
-                        Configuration
-                    </a>
-                </div>
-            </div>
-            <div class="card ">
-                <div class="card-header">
-                    fzf
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">FZF</h5>
-                    <p class="card-text h-100">Command line fuzzy finder. Improves history and file search.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="https://github.com/junegunn/fzf">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation" href="#">
-                        Installation
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Configuration" href="#">
-                        Configuration
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    hub
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">Hub</h5>
-                    <p class="card-text h-100">A wrapper around git that makes working with GitHub easier.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="https://github.com/rbenv/rbenv">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation" href="#">
-                        Installation
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Configuration" href="#">
-                        Configuration
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header text-center bg-default">
-                    rbenv
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">rbenv</h5>
-                    <p class="card-text h-100">The Ruby version manager of choice.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="https://github.com/rbenv/rbenv">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation" href="#">
-                        Installation
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Configuration" href="#">
-                        Configuration
-                    </a>
-                </div>
-            </div>
-            <div class="card ">
-                <div class="card-header">
-                    pyenv
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">pyenv</h5>
-                    <p class="card-text h-100">The Python version manager of choice.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="https://github.com/pyenv/pyenv">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation" href="#">
-                        Installation
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Configuration" href="#">
-                        Configuration
-                    </a>
-                </div>
-            </div>
-            <div class="card ">
-                <div class="card-header text-center bg-default">
-            nvm
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">nvm</h5>
-                    <p class="card-text h-100">The Node version manager of choice.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="https://github.com/creationix/nvm">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation" href="#">
-                        Installation
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Configuration" href="#">
-                        Configuration
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    jenv
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">jenv</h5>
-                    <p class="card-text h-100">The Java version manager of choice.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="http://www.jenv.be/">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation" href="#">
-                        Installation
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Configuration" href="#">
-                        Configuration
-                    </a>
-                </div>
-            </div>
-            <div class="card " id="nord">
-                <div class="card-header">
-nord
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title align-center">Nord Color Scheme</h5>
-                    <p class="card-text h-100">Your terminal isn't complete with some nice colors. Works great with
-                        gnome-terminal.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <a class="btn" title="Homepage" href="https://github.com/creationix/nvm">
-                        Homepage
-                    </a>
-                    <span><i class="fa fa-minus text-primary"></i></span>
-                    <a class="btn" title="Installation" href="#">
-                        Installation
-                    </a>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header d-flex">
+                        <h2 style="font-size: 3.0em">Antigen</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="http://www.zsh.org/" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">Another plugin manager for ZSH. More modern than oh-my-zsh and
+                            modular. </p>
+                    </div>
 
                 </div>
             </div>
 
+            <div class="col-md-6 col-lg-4">
+                <div class="card ">
+                    <div class="card-header d-flex">
+                        <h2 class="text-center" style="font-size: 2.5em">Spaceship</br>Prompt</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="http://www.zsh.org/" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">A sweet theme for your prompt. Tons of customizations and great git
+                            support.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card" id="homeshick">
+                    <div class="card-header d-flex">
+                        <h2 class="text-center" style="font-size: 2.5em">Homeshick</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="http://www.zsh.org/" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">Manage your dotfiles using git. No dependencies required, its just
+                            bash. Also see <a href="#">Castles</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card ">
+                    <div class="card-header d-flex">
+                        <h2 class="text-center" style="font-size: 3em">The</br>Fuck</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="http://www.zsh.org/" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">Magnificent app that corrects your typos. Absolutely required for any
+                            command line.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card ">
+                    <div class="card-header">
+                        <h2 class="text-center" style="font-size: 3.0em">Fzf</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/junegunn/fzf" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">Command line fuzzy finder. Improves history and file search.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-center" style="font-size: 3.0em">Hub</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/junegunn/fzf" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">A wrapper around git that makes working with GitHub easier.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-center" style="font-size: 3.0em">Rbenv</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/junegunn/fzf" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">The Ruby version manager of choice.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 ">
+                <div class="card ">
+                    <div class="card-header">
+                        <h2 class="text-center" style="font-size: 3.0em">pyenv</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/junegunn/fzf" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">The Python version manager of choice.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 ">
+                <div class="card ">
+                    <div class="card-header">
+                        <h2 class="text-center" style="font-size: 3.0em">Fzf</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/junegunn/fzf" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">The Node version manager of choice.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-center" style="font-size: 3.0em">Jenv</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/junegunn/fzf" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">The Java version manager of choice.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 ">
+                <div class="card " id="nord">
+                    <div class="card-header">
+                        <h2 class="text-center" style="font-size: 3.0em">Nord</br>Color</br>Scheme</h2>
+                        <ul class="list-inline icon-bar">
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/junegunn/fzf" title="Homepage">
+                                    <i class="fa fa-fw fa-link"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-link"
+                                   href="https://github.com/hschne/setup/blob/2e44ab998cdd9a22cd09c29d4b472a7f7b4d1c4b/install.sh#L17-L27"
+                                   title="Installation">
+                                    <i class="fa fa-fw fa-cube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text h-100">Your terminal isn't complete with some nice colors. Works
+                            great with
+                            gnome-terminal.</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
     </div>
