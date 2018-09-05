@@ -31,10 +31,10 @@
 <body id="page-top">
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+<nav class="navbar navbar-expand-lg fixed-top text-uppercase" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Glumpat </a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary rounded" type="button"
                 data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -42,15 +42,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 dropdown-toggle rounded" href="#" id="navbarDropdown"
-                       role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Glumpat
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item js-scroll-trigger" href="#cli">CLI</a>
-                        <a class="dropdown-item js-scroll-trigger" href="#vim">Vim</a>
-                    </div>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#cli">CLI</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#vim">VIM</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
@@ -61,12 +57,10 @@
 </nav>
 
 <!-- Header -->
-<header class="masthead bg-primary text-white text-center">
+<header class="masthead text-center">
     <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
         <h1 class="text-uppercase">Glumpat</h1>
         <h2 class="font-italic font-weight-light ">[gluːmpa:t]</h2>
-        <hr class="star-light">
         <h2 class="font-weight-light mb-3"><p>
             <i>Glumpat</i> is what Austrians would colloquially call <i>"Stuff"</i>.
         </p>
@@ -82,13 +76,16 @@
 </header>
 
 
-<section class="bg-warning" id="cli">
+<section id="cli">
     <div class="container">
         <h2 class="text-center text-uppercase mb-5">CLI</h2>
         <h4 class="text-center mb-5">There are so many possibilities to customize your CLI. Make it pretty.
             Make it more useful. Make it fun. Below are a number of projects that do just that.</h4>
-        <div class="card-columns">
+        <div class="card-deck">
             <div class="card">
+                <div class="card-header">
+                    ZSH
+                </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">Zsh</h5>
                     <p class="card-text">ZSH is a shell that has a bunch of nice features when compared to bash,
@@ -106,10 +103,11 @@
                 </div>
             </div>
             <div class=" card">
-                <div class="card-header text-center bg-default">
-                    <img class="card-img-top mx-auto " src="/img/omz.png" style="height: 200px; width: auto" alt="">
+                <div class="card-header">
+                    oh-<br>
+                    my-<br>
+                    zsh
                 </div>
-
                 <div class="card-body">
                     <h5 class="card-title align-center">Oh my zsh</h5>
                     <p class="card-text h-100">oh my zsh is a plugin management framework for ZSH. Comes with a ton
@@ -128,11 +126,9 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header text-center bg-default">
-                    <img class="card-img-top mx-auto " src="/img/antigen.png" style="height: 200px; width: auto"
-                         alt="">
+                <div class="card-header">
+                    antigen
                 </div>
-
                 <div class="card-body">
                     <h5 class="card-title align-center">Antigen</h5>
                     <p class="card-text h-100">Another plugin manager for ZSH. More modern than oh-my-zsh and
@@ -149,10 +145,11 @@
                     </a>
                 </div>
             </div>
+            
             <div class="card ">
-                <div class="card-header text-center bg-default">
-                    <img class="card-img-top mx-auto " src="/img/spaceship.png" style="height: 200px; width: auto"
-                         alt="">
+                <div class="card-header">
+                    spaceship<br>
+                    prompt
                 </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">Spaceship Prompt</h5>
@@ -171,6 +168,9 @@
                 </div>
             </div>
             <div class="card" id="homeshick">
+                <div class="card-header">
+                    Homeshick
+                </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">Homeshick</h5>
                     <p class="card-text h-100">Manage your dotfiles using git. No dependencies required, its just
@@ -191,6 +191,9 @@
                 </div>
             </div>
             <div class="card ">
+                <div class="card-header">
+                    The Fuck
+                </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">The Fuck</h5>
                     <p class="card-text h-100">Magnificent app that corrects your typos. Absolutely required for any
@@ -211,8 +214,8 @@
                 </div>
             </div>
             <div class="card ">
-                <div class="card-header text-center bg-secondary">
-                    <img class="card-img-top mx-auto " src="/img/fzf.png" style="height: 200px; width: auto" alt="">
+                <div class="card-header">
+                    fzf
                 </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">FZF</h5>
@@ -233,16 +236,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header text-center bg-secondary">
-                    <div class="card-img-top mx-auto " style="text-decoration: none;
-    font-size: 8em;
-    letter-spacing: -.1em;
-    margin-right: .1em;
-      text-transform: none;
-    -webkit-text-stroke: white 1px;
-    text-shadow: #eee -1px -1px 0, #eee -2px -2px 0, #eee -3px -3px 0, #eee -4px -4px 0, rgba(65, 131, 196, .3) -5px -5px 0; color: rgb(65, 131, 196); height: 200px; width: auto"
-                         alt="">Hub
-                    </div>
+                <div class="card-header">
+                    hub
                 </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">Hub</h5>
@@ -264,8 +259,7 @@
             </div>
             <div class="card">
                 <div class="card-header text-center bg-default">
-                    <img class="card-img-top mx-auto " src="/img/ruby.png" style="height: 200px; width: auto"
-                         alt="">
+                    rbenv
                 </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">rbenv</h5>
@@ -286,9 +280,8 @@
                 </div>
             </div>
             <div class="card ">
-                <div class="card-header text-center bg-default">
-                    <img class="card-img-top mx-auto " src="/img/python.png" style="height: 200px; width: auto"
-                         alt="">
+                <div class="card-header">
+                    pyenv
                 </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">pyenv</h5>
@@ -310,8 +303,7 @@
             </div>
             <div class="card ">
                 <div class="card-header text-center bg-default">
-                    <img class="card-img-top mx-auto " src="/img/node.png" style="height: 200px; width: auto"
-                         alt="">
+            nvm
                 </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">nvm</h5>
@@ -332,8 +324,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header text-center bg-default">
-                    <div style="font-family: 'Chewy', cursive;font-size: 8em; height: 200px; width: auto">jEnv</div>
+                <div class="card-header">
+                    jenv
                 </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">jenv</h5>
@@ -354,9 +346,8 @@
                 </div>
             </div>
             <div class="card " id="nord">
-                <div class="card-header text-center bg-default">
-                    <img class="card-img-top mx-auto " src="/img/nord.svg" style="height: 200px; width: auto"
-                         alt="">
+                <div class="card-header">
+nord
                 </div>
                 <div class="card-body">
                     <h5 class="card-title align-center">Nord Color Scheme</h5>
@@ -380,14 +371,14 @@
     </div>
 </section>
 
-<section class="portfolio bg-danger" id="vim">
+<section id="vim">
     <div class="container">
-        <h2 class="text-center text-uppercase text-white mb-5">VIM</h2>
-        <h4 class="text-center text-light mb-5"><a class="text-secondary"  href="https://www.vim.org/">Vim</a> is a
+        <h2 class="text-center text-uppercase mb-5">VIM</h2>
+        <h4 class="text-center mb-5"><a href="https://www.vim.org/">Vim</a> is a
             wonderful text editor, once you get the hang of it. Extensible by plugins, and highly configurable.
-            My favourite plugins below are installed using <a class="text-secondary"  href="https://github.com/VundleVim/Vundle.vim"
+            My favourite plugins below are installed using <a href="https://github.com/VundleVim/Vundle.vim"
                                                               target="_blank">Vundle</a>. See the
-            <a class="text-secondary" href="#">Vimrc</a> for a list of all plugins I use.</h4>
+            <a href="#">Vimrc</a> for a list of all plugins I use.</h4>
 
         <div class="card-columns">
             <div class="card">
@@ -566,7 +557,7 @@
     </div>
 </section>
 
-<section class="bg-dark text-white" id="about">
+<section class="" id="about">
     <div class="container">
         <h2 class="text-center text-uppercase text-white mb-5">About</h2>
         <div class="row">
@@ -576,19 +567,19 @@
                     I created Glumpat to give people some insight into the tools I use on a
                     daily basis. I really enjoy my stuff, and I wanted an easy way to share my personal stack.
                 </p>
-                <p>The project is Github organisation that consists of two <a class="text-secondary"
-                                                                              href="https://github.com/andsens/homeshick">homeshick</a>
+                <p>The project is Github organisation that consists of two <a
+                        href="https://github.com/andsens/homeshick">homeshick</a>
                     castles:
-                    One is for <a class="text-secondary" href="https://github.com/glumpat/dotfiles">dotfiles</a> and the
+                    One is for <a href="https://github.com/glumpat/dotfiles">dotfiles</a> and the
                     other is for
-                    <a class="text-secondary" href="https://github.com/glumpat/scripts">scripts</a> that I collected
+                    <a href="https://github.com/glumpat/scripts">scripts</a> that I collected
                     over the years.
                 </p>
                 <p>There is
-                    also a <a class="text-secondary" href="https://github.com/glumpat/setup">repository containing a
+                    also a <a href="https://github.com/glumpat/setup">repository containing a
                         script</a> for
-                    automatically setting up the whole stack. Check it out on <a class="text-secondary"
-                                                                                 href="https://github.com/glumpat">Github.</a>
+                    automatically setting up the whole stack. Check it out on <a
+                            href="https://github.com/glumpat">Github.</a>
                 </p>
             </h3>
         </div>
@@ -602,7 +593,8 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/hschnedlitz">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://twitter.com/hschnedlitz">
                             <i class="fa fa-fw fa-twitter"></i>
                         </a>
                     </li>

@@ -12,46 +12,6 @@ h6 {
   @include heading-font;
 }
 
-// Custom Horizontal Rule with Star Icon
-hr.star-light,
-hr.star-dark {
-  max-width: 15rem;
-  padding: 0;
-  text-align: center;
-  border: none;
-  border-top: solid 0.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-hr.star-light:after,
-hr.star-dark:after {
-  position: relative;
-  top: -.8em;
-  display: inline-block;
-  padding: 0 0.25em;
-  content: '\f005';
-  font-family: FontAwesome;
-  font-size: 2em;
-}
-
-hr.star-light {
-  border-color: $white;
-}
-hr.star-light:after {
-  color: $white;
-  background-color: $primary;
-}
-
-hr.star-dark {
-  border-color: $secondary;
-}
-hr.star-dark:after {
-  color: $secondary;
-  background-color: white;
-}
 
 // Section Padding Settings
 section {
@@ -96,5 +56,45 @@ section {
   }
 }
 
+.card {
+  border: 5px solid black;
+  border-radius: 0;
+}
+
+
+.card:hover {
+  background: red;
+}
+
+.card-body {
+  background: black;
+  color: white;
+  border-radius: 0;
+}
+
+.card-body:hover{
+  background: red;
+}
+
+.card-header {
+  height: 200px;
+  background: white;
+}
+
+
+.card-logo > img {
+  width: auto;
+  height: 200px;
+}
+
+.card-footer {
+  background: black;
+  border-radius: 0px !important;
+}
+
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
 
 
