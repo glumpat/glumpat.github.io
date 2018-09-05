@@ -115,8 +115,13 @@ section h2 {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background: black;
   font-weight: 700;
   font-family: 'Montserrat';
+}
+
+#mainNav .navbar-brand {
+  color: white;
 }
 
 #mainNav .navbar-nav {
@@ -124,9 +129,29 @@ section h2 {
   letter-spacing: 0.0625rem;
 }
 
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #fff;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: red;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color: red;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: red;
+}
+
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
+}
+
+.nav-link {
+  color: white;
 }
 
 @media (min-width: 992px) {
@@ -147,10 +172,10 @@ section h2 {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    background: #28afb0;
+    color: red;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    background: #28afb0;
+    text-shadow: 1px 1px red;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -190,23 +215,21 @@ header.masthead h2 {
   }
 }
 
-.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #084c61;
-  color: #fff;
+.about-link {
+  color: orangered !important;
+  text-decoration: none !important;
 }
 
-.copyright {
-  background-color: #042732;
+.about-link:hover, .about-link:focus, .about-link:active {
+  text-shadow: 1px 1px red;
 }
 
 a {
-  color: #323031;
+  color: black;
 }
 
 a:focus, a:hover, a:active {
-  color: #181718;
+  color: black;
 }
 
 .btn {
@@ -214,39 +237,43 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #28afb0 !important;
+  background-color: white !important;
 }
 
 .bg-secondary {
-  background-color: #084c61 !important;
+  background-color: red !important;
+}
+
+.bg-dark {
+  background: black !important;
 }
 
 .text-primary {
-  color: #323031 !important;
+  color: black !important;
 }
 
 .text-secondary {
-  color: #fff !important;
+  color: red !important;
 }
 
 .btn-primary {
-  background-color: #28afb0;
-  border-color: #28afb0;
+  background-color: white;
+  border-color: white;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #1f8686;
-  border-color: #1f8686;
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
 }
 
 .btn-secondary {
-  background-color: #084c61;
-  border-color: #084c61;
+  background-color: red;
+  border-color: red;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #042732;
-  border-color: #042732;
+  background-color: #cc0000;
+  border-color: #cc0000;
 }
 
 @media (min-width: 1200px) {

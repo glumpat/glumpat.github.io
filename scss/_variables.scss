@@ -19,8 +19,8 @@ $color-green: rgba(40, 175, 176, 1);
 $color-yellow: rgba(255, 200, 87, 1);
 $color-grey: rgba(50, 48, 49, 1);
 
-$primary: $color-green !default;
-$secondary: $color-blue !default;
+$primary: white !default;
+$secondary: red !default;
 $warning: $color-yellow !default;
 $danger: $color-red !default;
-$dark: $color-grey !default;
+$dark: black !default;

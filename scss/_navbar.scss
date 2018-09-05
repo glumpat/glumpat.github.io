@@ -2,21 +2,26 @@
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background: $dark;
   @include heading-font;
   .navbar-brand {
+      color: $primary;
   }
   .navbar-nav {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
     li.nav-item {
       a.nav-link {
+        color: $white;
         &:hover {
-
+          color: $secondary;
         }
         &:active,
         &:focus {
+          color: $secondary;
         }
         &.active {
+          color: $secondary;
         }
       }
     }
@@ -28,6 +33,10 @@
 
 
 
+}
+
+.nav-link {
+  color: white;
 }
 @media(min-width:992px) {
   #mainNav {
@@ -46,12 +55,13 @@
       margin-top: 0;
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
-      background: $primary;
+      color: $secondary;
       &:active,
       &:focus,
       &:hover {
-        background: $primary;
+        text-shadow: 1px 1px red;
       }
+
     }
   }
   #mainNav.navbar-shrink {

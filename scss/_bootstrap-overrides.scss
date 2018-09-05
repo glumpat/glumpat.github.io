@@ -24,12 +24,16 @@ a {
   background-color: $secondary !important;
 }
 
+.bg-dark {
+  background: $dark !important;
+}
+
 .text-primary {
   color: $dark !important;
 }
 
 .text-secondary {
-  color: $white !important;
+  color: $secondary !important;
 }
 
 .btn-primary {
