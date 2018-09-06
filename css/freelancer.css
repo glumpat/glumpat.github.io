@@ -12,6 +12,15 @@ h6 {
   font-family: 'Space Mono', monospace;
 }
 
+::selection {
+  color: white;
+  background: red;
+}
+
+::-moz-selection {
+  background: red;
+}
+
 section {
   padding: 6rem 0;
 }
@@ -98,7 +107,7 @@ section h2 {
 
 .card .card-header h2 {
   margin: auto;
-  line-height: 1em;
+  line-height: 1.2em;
   text-transform: uppercase;
 }
 
@@ -108,6 +117,10 @@ section h2 {
 
 .card:hover .card-header h2 {
   color: orangered;
+}
+
+.text {
+  font-size: 2rem;
 }
 
 .btn-link {
