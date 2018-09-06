@@ -50,8 +50,20 @@ section h2 {
 .scroll-to-top a {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: rgba(33, 37, 41, 0.5);
-  line-height: 3.1rem;
+  line-height: 3.5rem;
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top a .arrow-up {
+  margin: auto;
+  width: 45px;
+  height: 30px;
+  background: red;
+  clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+}
+
+.scroll-to-top a:hover div .arrow-up {
+  transform: translate(0, -3px);
 }
 
 .card {
@@ -115,13 +127,14 @@ section h2 {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background: black;
+  background: red;
+  border-bottom: 5px solid black;
   font-weight: 700;
   font-family: 'Montserrat';
 }
 
 #mainNav .navbar-brand {
-  color: white;
+  color: black;
 }
 
 #mainNav .navbar-nav {
@@ -130,30 +143,30 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
+  color: black;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: red;
+  color: white;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: red;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: red;
+  color: white;
+  text-shadow: 1px 1px white;
 }
 
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
-  background: black !important;
-  color: white;
+  background: red !important;
+  color: black;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 #mainNav .navbar-toggler:hover, #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:active {
-  color: red;
+  box-shadow: none !important;
+  color: white;
 }
 
 .nav-link {
@@ -178,10 +191,10 @@ section h2 {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: red;
+    color: white;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    text-shadow: 1px 1px red;
+    text-shadow: 1px 1px white;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -192,32 +205,69 @@ section h2 {
   }
 }
 
-header.masthead {
-  padding-top: calc(6rem + 72px);
-  padding-bottom: 6rem;
+header {
+  background: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-header.masthead h1 {
+header .masthead {
+  margin: auto;
+  align-self: center;
+}
+
+header .masthead .title {
+  background: white;
+  color: black;
+  box-shadow: -10px 10px red;
+  border: 5px solid black;
+  display: flex;
+}
+
+header .masthead .title div {
+  margin: auto;
+}
+
+header .masthead .title div h1 {
+  margin: auto;
   font-size: 3rem;
   line-height: 3rem;
 }
 
-header.masthead h2 {
+@media (min-width: 992px) {
+  header .masthead .title div h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+header .masthead .title div h2 {
   font-size: 1.3rem;
   font-family: 'Lato';
 }
 
 @media (min-width: 992px) {
-  header.masthead {
-    padding-top: calc(6rem + 106px);
-    padding-bottom: 6rem;
+  header .masthead .title div h2 {
+    font-size: 3rem;
+    line-height: 3rem;
   }
-  header.masthead h1 {
-    font-size: 4.75em;
-    line-height: 4rem;
-  }
-  header.masthead h2 {
-    font-size: 1.75em;
+}
+
+header .masthead .subtitle {
+  margin-top: 2em;
+}
+
+header .masthead .subtitle h3 {
+  padding: 0;
+  font-size: 1.2rem;
+  color: black;
+}
+
+@media (min-width: 992px) {
+  header .masthead .subtitle h3 {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
 
@@ -270,6 +320,10 @@ a:focus, a:hover, a:active {
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #e6e6e6;
   border-color: #e6e6e6;
+}
+
+.btn:focus, .btn.focus, .btn:active, .form-control:focus {
+  box-shadow: none;
 }
 
 .btn-secondary {

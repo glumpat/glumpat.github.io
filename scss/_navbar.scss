@@ -2,26 +2,25 @@
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background: $dark;
+  background: $secondary;
+  border-bottom: 5px solid $dark;
   @include heading-font;
   .navbar-brand {
-    color: $primary;
+    color: $dark;
   }
   .navbar-nav {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
     li.nav-item {
       a.nav-link {
-        color: $white;
+        color: $dark;
         &:hover {
-          color: $secondary;
+          color: $primary;
         }
         &:active,
         &:focus {
-          color: $secondary;
-        }
-        &.active {
-          color: $secondary;
+          color: $primary;
+          text-shadow: 1px 1px $primary;
         }
       }
     }
@@ -29,12 +28,15 @@
   .navbar-toggler {
     font-size: 80%;
     padding: 0.8rem;
-    background: $dark !important;
-    color: $primary;
+    background: $secondary !important;
+    color: $dark;
+    box-shadow: none !important;
+    border: none !important;
     &:hover,
     &:focus,
     &:active {
-      color: $secondary;
+      box-shadow: none !important;
+      color: $primary;
     }
   }
 
@@ -61,11 +63,11 @@
       margin-top: 0;
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
-      color: $secondary;
+      color: $primary;
       &:active,
       &:focus,
       &:hover {
-        text-shadow: 1px 1px red;
+        text-shadow: 1px 1px $primary;
       }
     }
 

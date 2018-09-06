@@ -47,6 +47,10 @@ a {
   }
 }
 
+.btn:focus, .btn.focus, .btn:active, .form-control:focus {
+  box-shadow: none;
+}
+
 .btn-secondary {
   background-color: $secondary;
   border-color: $secondary;
