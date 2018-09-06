@@ -5,7 +5,7 @@
   background: $dark;
   @include heading-font;
   .navbar-brand {
-      color: $primary;
+    color: $primary;
   }
   .navbar-nav {
     margin-top: 1rem;
@@ -29,16 +29,22 @@
   .navbar-toggler {
     font-size: 80%;
     padding: 0.8rem;
+    background: $dark !important;
+    color: $primary;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $secondary;
+    }
   }
-
-
 
 }
 
 .nav-link {
   color: white;
 }
-@media(min-width:992px) {
+
+@media(min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -61,8 +67,8 @@
       &:hover {
         text-shadow: 1px 1px red;
       }
-
     }
+
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;

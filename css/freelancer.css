@@ -148,6 +148,12 @@ section h2 {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
+  background: black !important;
+  color: white;
+}
+
+#mainNav .navbar-toggler:hover, #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:active {
+  color: red;
 }
 
 .nav-link {
@@ -216,7 +222,7 @@ header.masthead h2 {
 }
 
 .about-link {
-  color: orangered !important;
+  color: red !important;
   text-decoration: none !important;
 }
 
