@@ -40,7 +40,8 @@ section h2 {
 .btn-social {
   width: 3.25rem;
   height: 3.25rem;
-  font-size: 1.25rem;
+  padding-top: 0.4em;
+  font-size: 1.35rem;
   line-height: 2rem;
 }
 
@@ -160,7 +161,6 @@ section h2 {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 80%;
   padding: 0.8rem;
   background: red !important;
   color: black;
@@ -275,12 +275,12 @@ header .masthead .subtitle h3 {
   }
 }
 
-.about-link {
+.link {
   color: red !important;
   text-decoration: none !important;
 }
 
-.about-link:hover, .about-link:focus, .about-link:active {
+.link:hover, .link:focus, .link:active {
   text-shadow: 1px 1px red;
 }
 
