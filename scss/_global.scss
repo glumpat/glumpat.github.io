@@ -16,6 +16,7 @@ h6 {
   color: $primary;
   background: $secondary;
 }
+
 ::-moz-selection {
   background: $secondary;
 }
@@ -32,6 +33,18 @@ section {
       font-size: 3rem;
       line-height: 2.5rem;
     }
+  }
+}
+
+.section-text {
+  @include body-font();
+
+  font-size: 1.1rem;
+  color: $dark;
+
+  @media (min-width: 992px) {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -81,6 +94,17 @@ section {
 
 }
 
+.link {
+  color: $secondary !important;
+  text-decoration: none !important;
+  &:hover,
+  &:focus,
+  &:active {
+    text-shadow: 1px 1px red;
+  }
+}
+
+
 .card {
   border: 5px solid black;
   border-radius: 0;
@@ -108,6 +132,20 @@ section {
       margin: auto;
       line-height: 1.2em;
       text-transform: uppercase;
+
+
+    }
+
+    .short {
+      font-size: 3em;
+    }
+
+    .medium {
+      font-size: 2.5em;
+    }
+
+    .long {
+      font-size: 2.2em;
     }
   }
 

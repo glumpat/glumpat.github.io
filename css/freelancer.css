@@ -37,6 +37,19 @@ section h2 {
   }
 }
 
+.section-text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1rem;
+  color: black;
+}
+
+@media (min-width: 992px) {
+  .section-text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
 .body-font {
   font-family: 'Work Sans', sans-serif;
 }
@@ -80,6 +93,15 @@ section h2 {
   transform: translate(0, -3px);
 }
 
+.link {
+  color: red !important;
+  text-decoration: none !important;
+}
+
+.link:hover, .link:focus, .link:active {
+  text-shadow: 1px 1px red;
+}
+
 .card {
   border: 5px solid black;
   border-radius: 0;
@@ -109,6 +131,18 @@ section h2 {
   margin: auto;
   line-height: 1.2em;
   text-transform: uppercase;
+}
+
+.card .card-header .short {
+  font-size: 3em;
+}
+
+.card .card-header .medium {
+  font-size: 2.5em;
+}
+
+.card .card-header .long {
+  font-size: 2.2em;
 }
 
 .card:hover {
@@ -153,6 +187,10 @@ section h2 {
 
 #mainNav .navbar-brand {
   color: black;
+}
+
+#mainNav .navbar-brand:hover {
+  color: white;
 }
 
 #mainNav .navbar-nav {
@@ -286,15 +324,6 @@ header .masthead .subtitle h3 {
     font-size: 2rem;
     line-height: 2rem;
   }
-}
-
-.link {
-  color: red !important;
-  text-decoration: none !important;
-}
-
-.link:hover, .link:focus, .link:active {
-  text-shadow: 1px 1px red;
 }
 
 a {
