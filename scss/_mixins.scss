@@ -1,8 +1,9 @@
 @mixin body-font() {
-  font-family: 'Lato';
+  font-family: 'Work Sans', sans-serif;
 }
 
 @mixin heading-font() {
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Space Mono', monospace;
 }
+

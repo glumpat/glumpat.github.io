@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato';
+  font-family: 'Work Sans', sans-serif;
 }
 
 h1,
@@ -9,7 +9,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Space Mono', monospace;
 }
 
 section {
@@ -26,6 +26,10 @@ section h2 {
     font-size: 3rem;
     line-height: 2.5rem;
   }
+}
+
+.body-font {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .btn-xl {
@@ -130,7 +134,7 @@ section h2 {
   background: red;
   border-bottom: 5px solid black;
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Space Mono', monospace;
 }
 
 #mainNav .navbar-brand {
@@ -244,7 +248,7 @@ header .masthead .title div h1 {
 
 header .masthead .title div h2 {
   font-size: 1.3rem;
-  font-family: 'Lato';
+  font-family: 'Work Sans', sans-serif;
 }
 
 @media (min-width: 992px) {
