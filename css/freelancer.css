@@ -176,6 +176,76 @@ section h2 {
   right: 5px;
 }
 
+.grave {
+  border: 3px solid white;
+  border-radius: 0;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.grave .card-body {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.grave .card-footer {
+  background: black;
+  border-radius: 0 !important;
+  border: none;
+}
+
+.grave .card-header {
+  height: 150px;
+  background: black;
+  display: flex;
+}
+
+.grave .card-header h2 {
+  margin: auto;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.grave .card-header .short {
+  font-size: 3em;
+}
+
+.grave .card-header .medium {
+  font-size: 2.5em;
+}
+
+.grave .card-header .long {
+  font-size: 2.2em;
+}
+
+.grave:hover {
+  box-shadow: 8px 8px white;
+}
+
+.grave:hover .card-header h2 {
+  color: white;
+}
+
+.grave ::selection {
+  color: black;
+  background: ghostwhite;
+}
+
+.btn-link-inverse {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  color: white;
+}
+
+.btn-link-inverse:hover {
+  color: white;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
