@@ -1,4 +1,6 @@
 // Typography
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 body {
   @include body-font;
 }
@@ -54,13 +56,11 @@ section {
   @include body-font();
 }
 
-// Custom Button Size
 .btn-xl {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;
 }
 
-// Custom Rounded Social Button
 .btn-social {
   width: 3.25rem;
   height: 3.25rem;
@@ -97,7 +97,7 @@ section {
 
 }
 
-.link {
+.link-red {
   color: $secondary !important;
   text-decoration: none !important;
 
@@ -108,36 +108,28 @@ section {
   }
 }
 
-.card {
+.tool {
+  @extend .card;
   border: 5px solid black;
   border-radius: 0;
   height: 350px;
   margin-bottom: 20px;
 
-  .card-body {
+  .tool-body {
+    @extend .card-body;
     background: $dark;
     color: $primary;
-    border: none;
   }
 
-  .card-footer {
-    background: $primary;
-    border-radius: 0 !important;
-    border: none;
-
-  }
-
-  .card-header {
+  .tool-header {
+    @extend .card-header;
     height: 200px;
-    background: $primary;
     display: flex;
 
     h2 {
       margin: auto;
       line-height: 1.2em;
       text-transform: uppercase;
-
-
     }
 
     .short {
@@ -156,7 +148,7 @@ section {
   &:hover {
     box-shadow: 8px 8px red;
 
-    .card-header {
+    .tool-header {
       h2 {
         color: orangered;
       }
@@ -164,9 +156,32 @@ section {
   }
 }
 
-
 .text {
   font-size: 2rem;
+}
+
+.icon-bar {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.title {
+  margin: auto;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.title-short {
+  font-size: 3em;
+}
+
+.title-medium {
+  font-size: 2.5em;
+}
+
+.title-long {
+  font-size: 2.2em;
 }
 
 .btn-link {
@@ -182,83 +197,62 @@ section {
   }
 }
 
+.btn-link-inverse {
+  @extend .btn-link;
+  color: white;
 
-.icon-bar {
-  position: absolute;
-  top: 5px;
-  right: 5px;
+  &:hover * {
+    color: white
+  }
+}
+
+.bg-dark {
+  ::selection {
+    color: $dark;
+    background: rgba(255, 255, 255, 0.996);
+    opacity: 1;
+  }
 }
 
 .grave {
+  @extend .card;
   border: 3px solid white;
   border-radius: 0;
   height: 350px;
   margin-bottom: 20px;
+  color: white;
+  background: $dark;
 
-  .card-body {
-    background: $dark;
-    color: $primary;
-    border: none;
-  }
-
-  .card-footer {
-    background: $dark;
-    border-radius: 0 !important;
-    border: none;
-
-  }
-
-  .card-header {
-    height: 150px;
-    background: $dark;
-    display: flex;
-
-    h2 {
-      margin: auto;
-      line-height: 1.2em;
-      text-transform: uppercase;
-      color: white
-
-    }
-
-    .short {
-      font-size: 3em;
-    }
-
-    .medium {
-      font-size: 2.5em;
-    }
-
-    .long {
-      font-size: 2.2em;
+  link {
+    &:hover {
+      color: white;
+      text-shadow: 1px 1px 1px white;
     }
   }
 
   &:hover {
-    .card-header {
-      h2 {
-        color: white;
-      }
-    }
-
     box-shadow: 8px 8px white;
   }
-
-  ::selection {
-    color: $dark;
-    background: ghostwhite;
-  }
 }
 
-.btn-link-inverse {
-  width: 3.25rem;
-  height: 3.25rem;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  border-radius: 50%;
-  color: white;
-
-  &:hover {
-    color: white
-  }
+.grave-subheader {
+  height: 50px;
+  font-size: 1.4em;
 }
+
+.grave-header {
+  height: 150px;
+  background: $dark !important;
+  display: flex;
+}
+
+.grave-footer {
+  @extend .card-footer;
+  border-radius: 0 !important;
+  border: none;
+}
+
+.grave-body {
+  @extend .card-body;
+}
+
