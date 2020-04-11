@@ -1,5 +1,8 @@
-// Typography
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'navbar.scss';
+@import 'masthead.scss';
+@import 'about.scss';
 
 body {
   @include body-font;
@@ -94,7 +97,6 @@ section {
       transform: translate(0, -3px);
     }
   }
-
 }
 
 .link-red {
@@ -109,20 +111,17 @@ section {
 }
 
 .tool {
-  @extend .card;
   border: 5px solid black;
   border-radius: 0;
   height: 350px;
   margin-bottom: 20px;
 
   .tool-body {
-    @extend .card-body;
     background: $dark;
     color: $primary;
   }
 
   .tool-header {
-    @extend .card-header;
     height: 200px;
     display: flex;
 
@@ -202,7 +201,7 @@ section {
   color: white;
 
   &:hover * {
-    color: white
+    color: white;
   }
 }
 
@@ -215,7 +214,6 @@ section {
 }
 
 .grave {
-  @extend .card;
   border: 3px solid white;
   border-radius: 0;
   height: 350px;
@@ -247,12 +245,6 @@ section {
 }
 
 .grave-footer {
-  @extend .card-footer;
   border-radius: 0 !important;
   border: none;
 }
-
-.grave-body {
-  @extend .card-body;
-}
-

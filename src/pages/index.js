@@ -1,3 +1,14 @@
-import React from "react"
+import React from 'react'
+import '../styles/index.scss'
+import Header from '../components/header'
 
-export default () => <div>Hello world!</div>
+const Index = () => {
+  return (
+    <>
+      <Header />
+      <div>Hello World!</div>
+    </>
+  )
+}
+
+export default Index
