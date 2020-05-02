@@ -1,0 +1,23 @@
+title: The Graveyard
+description:
+  Some things are not meant to last. Time changes many things, including tool preferences.
+
+  Sometimes you dont need a particular tool anymore. Sometimes you find something that does the same job - but better.
+
+  Its still nice to look back from time to time and remember your old friends. This section lists all the tools that I used to use. May they rest in peace.
+graves:
+  - title: syntastic
+    description: ALE does everything you did faster and better. Farewell.
+    rip: 2019
+  - title: vundle
+    description: A younger, more featureful vim plugin manager came along, so I had to let you go.
+    rip: 2019
+  - title: rbenv, pyenv, nvm
+    description: The entire family of version managers (pyenv, nvm, rbenv) was superceded by asdf-vm.
+    rip: 2019
+  - title: antigen
+    description: I started using you and almost immediately moved to zplug. I'm so sorry little one.
+    rip: 2018
+  - title: jenv
+    description: If you don't use Java anymore, the Java tools get taken out back and shot.
+    rip: 2018
