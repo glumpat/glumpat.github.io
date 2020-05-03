@@ -1,0 +1,16 @@
+@import '../styles/variables.scss';
+
+.Header {
+  background: $primary;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.Title {
+  @apply border-4 border-black;
+  @apply p-10 text-black;
+  box-shadow: 10px 10px $secondary;
+}
+
+
