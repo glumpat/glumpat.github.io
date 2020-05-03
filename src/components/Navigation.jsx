@@ -7,7 +7,7 @@ const Navigation = () => {
       id="mainNav"
     >
       <div className="container">
-        <a className="navbar-brand js-scroll-trigger" href="#page-top">
+        <a className="navbar-brand js-scroll-trigger" href="#">
           Glumpat{' '}
         </a>
         <button
@@ -27,7 +27,7 @@ const Navigation = () => {
             <li className="nav-item mx-0 mx-lg-1">
               <a
                 className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#cli"
+                href="#wm"
               >
                 WM
               </a>

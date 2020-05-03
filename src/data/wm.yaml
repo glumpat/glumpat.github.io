@@ -13,7 +13,6 @@ tools:
   - title: dunst
     description: To display notifications you need a notification manager. Dunst does the job.
     link: https://dunst-project.org/
-    link-type: link
   - title: ranger
     description: When you use keyboard shortcuts everywhere already, why not use a file manager that supports it?
     link: https://github.com/ranger/ranger

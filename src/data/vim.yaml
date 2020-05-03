@@ -1,0 +1,63 @@
+title: Vim
+description: Vim is a wonderful text editor, once you get the hang of it. Extensible by plugins, and highly configurable.
+tools:
+  - title: vim plug
+    description: The vim plugin manager of choice. Has some nice features such as on-demand loading of plugins.
+    link: https://github.com/junegunn/vim-plug
+  - title: vim airline
+    description: Nice status/tabline for Vim. Lots of themes available.
+    link: https://github.com/vim-airline/vim-airline
+  - title: nord vim
+    description: The preferred theme. Consistent with the default color scheme.
+    link: https://github.com/arcticicestudio/nord-vim
+  - title: vim sensible
+    description: Sane defaults everyone can agree on.
+    link: https://github.com/tpope/vim-sensible
+  - title: vim surround
+    description: Makes surrounding things much easier. Super, super useful.
+    link: https://github.com/tpope/vim-surround
+  - title: vim unimpaired
+    description: Makes moving around in Vim more fun. Adds a bunch of very helpful shortcuts
+    link: https://github.com/tpope/vim-unimpaired
+  - title: vim commentary
+    description: Another Tim Pope plugin. This helps - you guessed it - with commenting stuff.
+    link: https://github.com/tpope/vim-commentary
+  - title: ale
+    description: Asynchronous syntax checking for Vim. Kind of mandatory if you want to edit anything beyond textfiles.
+    link: https://github.com/dense-analysis/ale
+  - title: vim gitgutter
+    description: Sweet git integration within Vim. Shows you changed lines and lets you stage and unstage hunks.
+    link: https://github.com/airblade/vim-gitgutter
+  - title: nerdtree
+    description: As soon as you spend a certain amount of time in Vim you want a nice file browser. Thats NERDTree for you.
+    link: https://github.com/preservim/nerdtree
+  - title: Tabular
+    description: Makes aligning text much easier.
+    link: https://github.com/godlygeek/tabular
+  - title: Supertab
+    description: Finally! Tab autocompletions that just work. A must have.
+    link: https://github.com/ervandew/supertab
+  - title: vim grammarous
+    description: Helps you suck less at grammar. Ties in nicely with spellcheck.
+    link: https://github.com/rhysd/vim-grammarous
+  - title: vim markdown
+    description: If you write a lot of markdown, this will make your life just a bit easier.
+    link: https://github.com/plasticboy/vim-markdown
+  - title: vim markdown preview
+    description: Nice and easy live preview for Markdown. Supports different styles.
+    link: https://github.com/JamshedVesuna/vim-markdown-preview
+  - title: vimtex
+    description: A light weight Latex plugin for Vim. Nothing too fancy.
+    link: https://github.com/lervag/vimtex
+  - title: Ultisnips
+    description: Snippet engine for Vim. Doesn't add snippets on its own though.
+    link: https://github.com/sirver/UltiSnips
+  - title: vim snippets
+    description: This is where the snippets for UltiSnips come from.
+    link: https://github.com/honza/vim-snippets
+  - title: vim gutentags
+    description: This helpful plugin automatically generates tags for you source code.
+    link: https://github.com/ludovicchabant/vim-gutentags
+  - title: vim tmux navigator
+    description: Seamless navigation between Vim and other panes within Tmux.
+    link: https://github.com/christoomey/vim-tmux-navigator

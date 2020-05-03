@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import ToolCard from '../ToolCard/ToolCard'
 
 const Tools = (props) => (
-  <section>
+  <section id={props.title.toLowerCase()}>
     <div class="container">
       <h2 class="text-center text-uppercase mb-5">{props.title}</h2>
       <div class="mb-5">
