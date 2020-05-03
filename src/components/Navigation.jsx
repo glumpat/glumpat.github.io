@@ -1,91 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Navigation = () => {
-  return (
-    <ul class="flex">
-      <li class="mr-6">
-        <a class="text-blue-500 hover:text-blue-800" href="#">Active</a>
-      </li>
-      <li class="mr-6">
-        <a class="text-blue-500 hover:text-blue-800" href="#">Link</a>
-      </li>
-      <li class="mr-6">
-        <a class="text-blue-500 hover:text-blue-800" href="#">Link</a>
-      </li>
-      <li class="mr-6">
-        <a class="text-gray-400 cursor-not-allowed" href="#">Disabled</a>
-      </li>
-    </ul>
-  )
+  const [open, setOpen] = useState(true)
 
-  return (
-    <nav
-      className="navbar navbar-expand-lg fixed-top text-uppercase"
-      id="mainNav"
-    >
-      <div className="container">
-        <a className="navbar-brand js-scroll-trigger" href="#">
-          Glumpat{' '}
-        </a>
-        <button
-          className="navbar-toggler navbar-toggler-right text-uppercase btn rounded"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <i className="fa fa-bars"></i>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#wm"
-              >
-                WM
-              </a>
-            </li>
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#cli"
-              >
-                CLI
-              </a>
-            </li>
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#vim"
-              >
-                VIM
-              </a>
-            </li>
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#graveyard"
-              >
-                The Graveyard
-              </a>
-            </li>
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#about"
-              >
-                About
-              </a>
-            </li>
-          </ul>
+  return <nav className="flex items-center fixed w-full justify-between flex-wrap bg-red border-b-4 border-black p-6">
+    <div className="flex items-center flex-shrink-0 text-white mr-6">
+      <a href="#" className="font-semibold text-xl tracking-tight cursor-pointer">Glumpat</a>
+    </div>
+    <div className="block lg:hidden">
+      <button
+        onClick={() => setOpen((previous) => !previous)}
+        className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+        <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+        </svg>
+      </button>
+    </div>
+    {open
+      ? <div className="w-full align-items-end block lg:flex lg:items-center lg:w-auto ">
+        <div className="text-sm">
+          <a href="#wm" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            WM
+          </a>
+          <a href="#cli" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            CLI
+          </a>
+          <a href="#vim" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            VIM
+          </a>
+          <a href="#graveyard" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white">
+            The Graveyard
+          </a>
         </div>
       </div>
-    </nav>
-  )
+      : null}
+  </nav>
 }
 
 export default Navigation
