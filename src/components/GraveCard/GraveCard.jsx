@@ -1,16 +1,18 @@
 import React from 'react'
 
+import classes from './GraveCard.module.scss'
+
 const GraveCard = (props) => (
-  <div class="col-md-6 col-lg-4 ">
-    <div class="grave">
-      <div class="grave-header">
-        <h3 class="title">{props.title}</h3>
+  <div className="w-full sm:w-1/2 lg:w-1/3 flex justify-center">
+    <div className={classes.Grave}>
+      <div className={classes.GraveHeader}>
+        <h2 className={classes.GraveTitle}>{props.title}</h2>
+        <p className={classes.GraveSubHeader}>
+          &#10013; {props.rip}
+        </p>
       </div>
-      <div class="text-white text-center grave-subheader">
-        <p class="tool-text text-center">+ {props.rip}</p>
-      </div>
-      <div class="grave-body">
-        <p class="tool-text">{props.description}</p>
+      <div className={classes.GraveBody}>
+        <p className="tool-text">{props.description}</p>
       </div>
     </div>
   </div>

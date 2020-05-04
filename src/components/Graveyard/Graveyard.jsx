@@ -2,16 +2,17 @@ import React from 'react'
 import GraveCard from '../GraveCard/GraveCard'
 
 const Graveyard = (props) => {
-  return <section id="graveyard">
-    <div className="container">
+  return <section id="graveyard" className="bg-black">
+    <div className="container mx-auto text-white">
       <h2 className="text-center text-uppercase mb-5">{props.title}</h2>
-      <div className="mb-5">
-        <h4 className="section-text font-weight-light">
-          {props.description}
-        </h4>
+      <h4 className="font-sans font-medium text-white mb-8 p-4">
+        {props.description}
+      </h4>
+      <div className="flex flex-wrap">
+        {props.graves.map(grave => <GraveCard key={grave.title} {...grave}/>)}
       </div>
-      {props.graves.map(grave => <GraveCard {...grave}/>)}
     </div>
+
   </section>
 }
 

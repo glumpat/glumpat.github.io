@@ -13,15 +13,13 @@ import Graveyard from '../components/Graveyard/Graveyard'
 const Index = () => {
   return <>
     <Navigation/>
+    <Header/>
     <div className="container mx-auto">
-      <Header/>
-      <div className="container">
-        <Tools {...WMData}/>
-        <Tools {...CliData}/>
-        <Tools {...VimData}/>
-        <Graveyard {...GraveyardData}/>
-      </div>
+      <Tools {...WMData}/>
+      <Tools {...CliData}/>
+      <Tools {...VimData}/>
     </div>
+    <Graveyard {...GraveyardData}/>
     <About/>
   </>
 }

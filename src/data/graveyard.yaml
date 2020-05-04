@@ -12,7 +12,7 @@ graves:
   - title: vundle
     description: A younger, more featureful vim plugin manager came along, so I had to let you go.
     rip: 2019
-  - title: rbenv, pyenv, nvm
+  - title: '*env'
     description: The entire family of version managers (pyenv, nvm, rbenv) was superceded by asdf-vm.
     rip: 2019
   - title: antigen

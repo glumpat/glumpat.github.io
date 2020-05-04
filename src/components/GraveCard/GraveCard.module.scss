@@ -1,0 +1,26 @@
+.Grave {
+  @apply flex flex-col w-11/12 mb-4 text-white;
+  border: 5px solid white;
+  border-radius: 0;
+
+  &:hover {
+    box-shadow: 8px 8px white;
+  }
+}
+
+.GraveHeader {
+  @apply h-48 flex flex-col p-2;
+}
+
+.GraveTitle {
+  @apply m-auto uppercase text-center;
+}
+
+
+.GraveSubHeader {
+  @apply text-xl text-center;
+}
+
+.GraveBody {
+  @apply p-4 flex-grow;
+}
