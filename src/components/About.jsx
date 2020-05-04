@@ -1,12 +1,14 @@
 import React from 'react'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 const About = props => {
   return (
-    <section className="bg-dark" id="about">
-      <div className="container">
+    <section className="bg-black text-white" id="about">
+      <div className="container mx-auto">
         <h2 className="text-center text-uppercase text-white mb-5">About</h2>
-
-        <div className="section-text text-white font-weight-light">
+        <div className="text-white text-lg font-sans font-medium">
           <p>My name is Hans Schnedlitz.</p>
           <p>
             I created Glumpat to give people some insight into the tools I use
@@ -16,9 +18,9 @@ const About = props => {
           <p>
             The project is a Github organisation that consists of a{' '}
             <a className="link-red" href="https://github.com/andsens/homeshick">
-              homeshick
-            </a>
-            castle:{' '}
+               homeshick
+            </a>{' '}
+            castle {' '}
             <a className="link-red" href="https://github.com/glumpat/dotfiles">
               Dotfiles
             </a>
@@ -26,11 +28,9 @@ const About = props => {
             useful little scripts. Please do poke around.
           </p>
           <p>
-            There is also a{' '}
-            <a className="link-red" href="https://github.com/glumpat/setup">
-              repository containing a script
-            </a>{' '}
-            for automatically setting up the whole stack. Check it out on{' '}
+            There is also a <a className="link-red" href="https://github.com/glumpat/setup"> repository containing a
+            script
+          </a> for automatically setting up the whole stack. Check it out on{' '}
             <a className="link-red" href="https://github.com/glumpat">
               Github.
             </a>
@@ -39,32 +39,34 @@ const About = props => {
         <div className="row justify-content-center">
           <div className="col-md-4 text-center">
             <h4 className="text-uppercase mb-4 mt-4 text-white">Contact Me </h4>
-            <ul className="list-inline mb-0">
-              <li className="list-inline-item">
-                <a
-                  className="btn btn-outline-light btn-social rounded-circle"
-                  href="https://github.com/hschne"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a
-                  className="btn btn-outline-light btn-social text-center rounded-circle"
-                  href="https://twitter.com/hschnedlitz"
-                >
-                  <i className="fa fa-fw fa-twitter"></i>
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a
-                  className="btn btn-outline-light btn-social text-center rounded-circle"
-                  href="https://hschne.at"
-                >
-                  <i className="fa fa-fw fa-home"></i>
-                </a>
-              </li>
-            </ul>
+            <div className="flex justify-center">
+              <ul className="flex justify-between w-1/12 mb-0">
+                <li className="list-inline-item">
+                  <a
+                    className="btn btn-outline-light btn-social rounded-circle"
+                    href="https://github.com/hschne"
+                  >
+                    <FontAwesomeIcon icon={faGithub}/>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a
+                    className="btn btn-outline-light btn-social text-center rounded-circle"
+                    href="https://twitter.com/hschnedlitz"
+                  >
+                    <FontAwesomeIcon icon={faTwitter}/>
+                  </a>
+                </li>
+                <li className="">
+                  <a
+                    className="btn btn-outline-light btn-social text-center rounded-circle"
+                    href="https://hschne.at"
+                  >
+                    <FontAwesomeIcon icon={faHome}/>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

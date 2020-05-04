@@ -13,4 +13,18 @@
   box-shadow: 10px 10px $secondary;
 }
 
+.ArrowContainer {
+  @apply flex justify-center;
+  transition: all ease-in-out 3s;
+
+  &:hover {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+
+    &::after {
+      animation: bounce 1s;
+    }
+  }
+}
 
