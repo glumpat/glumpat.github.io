@@ -11,7 +11,7 @@ const Header = () => {
           <h2 className="block font-weight-light text-xl sm:text-4xl lowercase">[gluːmpa:t]</h2>
         </div>
         <div className="pt-12">
-          <p className="mb-3 text-xl text-left">
+          <p className="mb-3 text-xl font-medium text-left">
             <i>Glumpat</i> is what Austrians would colloquially call <i>&quot;Stuff&quot;</i>.
             <br className="mb-1"/>
             This is exactly what this is - my stuff. Stuff I use on a daily

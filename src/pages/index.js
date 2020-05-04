@@ -15,10 +15,12 @@ const Index = () => {
     <Navigation/>
     <div className="container mx-auto">
       <Header/>
-      <Tools {...WMData}/>
-      <Tools {...CliData}/>
-      <Tools {...VimData}/>
-      <Graveyard {...GraveyardData}/>
+      <div className="container">
+        <Tools {...WMData}/>
+        <Tools {...CliData}/>
+        <Tools {...VimData}/>
+        <Graveyard {...GraveyardData}/>
+      </div>
     </div>
     <About/>
   </>

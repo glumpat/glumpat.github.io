@@ -113,65 +113,8 @@ section {
   }
 }
 
-.tool {
-  border: 5px solid black;
-  border-radius: 0;
-  height: 350px;
-  margin-bottom: 20px;
-
-  .tool-body {
-    background: $dark;
-    color: $primary;
-  }
-
-  .tool-header {
-    height: 200px;
-    display: flex;
-
-    h2 {
-      margin: auto;
-      line-height: 1.2em;
-      text-transform: uppercase;
-    }
-
-    .short {
-      font-size: 3em;
-    }
-
-    .medium {
-      font-size: 2.5em;
-    }
-
-    .long {
-      font-size: 2.2em;
-    }
-  }
-
-  &:hover {
-    box-shadow: 8px 8px red;
-
-    .tool-header {
-      h2 {
-        color: orangered;
-      }
-    }
-  }
-}
-
 .text {
   font-size: 2rem;
-}
-
-.icon-bar {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-
-.title {
-  margin: auto;
-  line-height: 1.2em;
-  text-transform: uppercase;
 }
 
 .title-short {
@@ -184,28 +127,6 @@ section {
 
 .title-long {
   font-size: 2.2em;
-}
-
-.btn-link {
-  width: 3.25rem;
-  height: 3.25rem;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  border-radius: 50%;
-  color: black;
-
-  &:hover * {
-    color: red;
-  }
-}
-
-.btn-link-inverse {
-  @extend .btn-link;
-  color: white;
-
-  &:hover * {
-    color: white;
-  }
 }
 
 .bg-dark {

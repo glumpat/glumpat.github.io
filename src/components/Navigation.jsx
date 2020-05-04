@@ -5,7 +5,7 @@ const Navigation = () => {
 
   return <nav
     className="flex items-center w-full justify-between flex-wrap bg-red border-b-4 border-black p-6 font-mono font-semibold">
-    <div className="flex items-center flex-shrink-0 text-white mr-6">
+    <div className="flex items-center flex-shrink-0 text-black mr-6">
       <a href="#" className="font-semibold text-xl tracking-tight uppercase hover:underline">Glumpat</a>
     </div>
     <div className="block lg:hidden">
@@ -19,19 +19,19 @@ const Navigation = () => {
     </div>
     {open
       ? <div className="w-full align-items-end block lg:flex lg:items-center lg:w-auto ">
-        <div className="text-sm">
-          <a href="#wm" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4 hover:underline">
+        <div className="">
+          <a href="#wm" className="block mt-4 lg:inline-block lg:mt-0 mr-4 hover:underline">
             WM
           </a>
           <a href="#cli"
-             className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4 hover:underline">
+             className="block mt-4 lg:inline-block lg:mt-0 hove mr-4 hover:underline">
             CLI
           </a>
           <a href="#vim"
-             className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4 hover:underline">
+             className="block mt-4 lg:inline-block lg:mt-0  mr-4 hover:underline">
             VIM
           </a>
-          <a href="#graveyard" className="block uppercase mt-4 lg:inline-block lg:mt-0 text-white hover:underline">
+          <a href="#graveyard" className="block uppercase mt-4 lg:inline-block lg:mt-0  hover:underline">
             The Graveyard
           </a>
         </div>

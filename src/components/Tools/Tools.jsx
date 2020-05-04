@@ -1,17 +1,14 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
 import ToolCard from '../ToolCard/ToolCard'
 
 const Tools = (props) => (
   <section id={props.title.toLowerCase()}>
-    <div class="container">
-      <h2 class="text-center text-uppercase mb-5">{props.title}</h2>
-      <div class="mb-5">
-        <h4 class="section-text font-weight-light">
-          {props.description}
-        </h4>
-        {props.tools.map(tool => <ToolCard {...tool}/>)}
-      </div>
+    <h2 className="text-center uppercase mb-5">{props.title}</h2>
+    <h4 className="font-sans text-lg font-medium p-4 mb-4">
+      {props.description}
+    </h4>
+    <div className="flex flex-wrap">
+      {props.tools.map(tool => <ToolCard key={tool.title} {...tool}/>)}
     </div>
   </section>
 )
