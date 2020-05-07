@@ -8,7 +8,7 @@ const About = props => {
     <section className="bg-black text-white" id="about">
       <div className="container mx-auto">
         <h2 className="text-center text-uppercase text-white mb-5">About</h2>
-        <div className="text-white text-lg font-sans font-medium">
+        <div className="p-2 text-white text-lg font-sans font-medium">
           <p>My name is Hans Schnedlitz.</p>
           <p>
             I created Glumpat to give people some insight into the tools I use

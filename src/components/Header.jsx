@@ -5,7 +5,7 @@ import classes from './Header.module.scss'
 const Header = () => {
   return (
     <header className={classes.Header}>
-      <div className="m-auto text-center w-4/5 lg:w-2/3">
+      <div className="m-auto text-center container">
         <div className={classes.Title}>
           <h1 className="block text-uppercase text-4xl sm:text-6xl uppercase">Glumpat</h1>
           <h2 className="block font-weight-light text-xl sm:text-4xl lowercase">[gluːmpa:t]</h2>

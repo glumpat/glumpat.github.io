@@ -4,12 +4,12 @@ tools:
   - title: zsh
     description: ZSH is a shell that has a bunch of nice features when compared to bash, such as better completion and globbing.
     link: https://www.zsh.org
-  - title: zplug
-    description: The ZSH Plugin manager of choice. Tons of features, fast, and customizable.
-    link: https://github.com/zplug/zplug
-  - title: Spaceship Prompt
-    description: A sweet theme for your prompt. Tons of customizations and great git support.
-    link: https://github.com/denysdovhan/spaceship-prompt
+  - title: zinit
+    description: The new ZSH plugin manager of choice. A bit complicated, but powerful once you get the hang of it.
+    link: https://github.com/zdharma/zinit
+  - title: starship prompt
+    description: A blazing fast prompt written in Rust. Inspired by spaceship.
+    link: https://starship.rs/
   - title: tmux
     description: A terminal multiplexer. Allows you to save sessions, have split panes and other helpful stuff.
     link: https://github.com/tmux/tmux
@@ -25,6 +25,9 @@ tools:
   - title: fzf
     description: Command line fuzzy finder. Improves history and file search. You need this.
     link: https://github.com/junegunn/fzf
+  - title: fzf-tab
+    description: Fuzzy tab completions that just work. Magnificent. You need this also.
+    link: https://github.com/Aloxaf/fzf-tab
   - title: enhancd
     description: An improved cd command that uses FZF to make fuzzy cd possible.
     link: https://github.com/b4b4r07/enhancd

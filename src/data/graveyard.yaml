@@ -6,6 +6,18 @@ description:
 
   Its still nice to look back from time to time and remember your old friends. This section lists all the tools that I used to use. May they rest in peace.
 graves:
+  - title: zplug
+    rip: 2020
+    description: ZSH package managers come and go. This one had to go.
+    link: https://github.com/zplug/zplug
+  - title: Spaceship Prompt
+    rip: 2020
+    description: Starship is the better spaceship. Fly away!
+    link: https://github.com/denysdovhan/spaceship-prompt
+  - title: Ultisnips
+    rip: 2020
+    description: Sorry you got replaced by Coc.vim
+    link: https://github.com/sirver/UltiSnips
   - title: syntastic
     description: ALE does everything you did faster and better. Farewell.
     rip: 2019

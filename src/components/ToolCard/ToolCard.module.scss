@@ -2,7 +2,7 @@
   @apply flex flex-col w-11/12 mb-4;
   border: 5px solid black;
   border-radius: 0;
-  height: 350px;
+  height: 250px;
 
   &:hover {
     box-shadow: 6px 6px red;
@@ -19,4 +19,10 @@
 
 .ToolTitle {
   @apply m-auto uppercase text-center;
+}
+
+@media (min-width: 640px) {
+  .Tool {
+    height: 300px
+  }
 }

@@ -8,8 +8,10 @@
   }
 }
 
+
 .GraveHeader {
   @apply h-48 flex flex-col p-2;
+  height: 150px;
 }
 
 .GraveTitle {
@@ -24,3 +26,4 @@
 .GraveBody {
   @apply p-4 flex-grow;
 }
+

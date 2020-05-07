@@ -1,5 +1,5 @@
 title: Vim
-description: Vim is a wonderful text editor, once you get the hang of it. Extensible by plugins, and highly configurable.
+description: Vim is a wonderful text editor, once you get the hang of it. Extensible by plugins, and highly configurable. You may notice I appear to be using a lot of plugins. Do I really need all of those? Probably not to be honest.
 tools:
   - title: vim plug
     description: The vim plugin manager of choice. Has some nice features such as on-demand loading of plugins.
@@ -10,6 +10,9 @@ tools:
   - title: nord vim
     description: The preferred theme. Consistent with the default color scheme.
     link: https://github.com/arcticicestudio/nord-vim
+  - title: rainbow parenthesis
+    description: Not only pretty, but also helpful. Probably the simplest rainbow parenthesis plugin.
+    link: https://github.com/junegunn/rainbow_parentheses.vim
   - title: vim sensible
     description: Sane defaults everyone can agree on.
     link: https://github.com/tpope/vim-sensible
@@ -22,9 +25,6 @@ tools:
   - title: vim commentary
     description: Another Tim Pope plugin. This helps - you guessed it - with commenting stuff.
     link: https://github.com/tpope/vim-commentary
-  - title: ale
-    description: Asynchronous syntax checking for Vim. Kind of mandatory if you want to edit anything beyond textfiles.
-    link: https://github.com/dense-analysis/ale
   - title: vim gitgutter
     description: Sweet git integration within Vim. Shows you changed lines and lets you stage and unstage hunks.
     link: https://github.com/airblade/vim-gitgutter
@@ -37,6 +37,12 @@ tools:
   - title: Supertab
     description: Finally! Tab autocompletions that just work. A must have.
     link: https://github.com/ervandew/supertab
+  - title: coc
+    description: The intellisense engine for Vim. The best completion plugin I have used so far.
+    link: https://github.com/neoclide/coc.nvim
+  - title: ale
+    description: Asynchronous syntax checking for Vim. Kind of mandatory if you want to edit anything beyond textfiles.
+    link: https://github.com/dense-analysis/ale
   - title: vim grammarous
     description: Helps you suck less at grammar. Ties in nicely with spellcheck.
     link: https://github.com/rhysd/vim-grammarous
@@ -46,15 +52,27 @@ tools:
   - title: vim markdown preview
     description: Nice and easy live preview for Markdown. Supports different styles.
     link: https://github.com/JamshedVesuna/vim-markdown-preview
+  - title: vim polyglot
+    description: I kinda got sick of installing plugins for various different languages. This plugin add support for all of them.
+    link: https://github.com/sheerun/vim-polyglot
   - title: vimtex
     description: A light weight Latex plugin for Vim. Nothing too fancy.
     link: https://github.com/lervag/vimtex
-  - title: Ultisnips
-    description: Snippet engine for Vim. Doesn't add snippets on its own though.
-    link: https://github.com/sirver/UltiSnips
+  - title: emmet
+    description: I had to write a bunch of HTML and JS recently, and in those instances you need emmet.
+    link: https://github.com/mattn/emmet-vim
   - title: vim snippets
     description: This is where the snippets for UltiSnips come from.
     link: https://github.com/honza/vim-snippets
+  - title: vim peekaboo
+    description: Find it hard to keep track of the contents of your registers? This plugin's got your back.
+    link: https://github.com/junegunn/vim-peekaboo
+  - title: vim asterisk
+    description: Nice plugin that improves asterisk searches.
+    link: https://github.com/haya14busa/vim-asterisk
+  - title: is.vim
+    description:  A small plugin that improves incremental search in an unobstrusive way.
+    link: https://github.com/haya14busa/vim-asterisk
   - title: vim gutentags
     description: This helpful plugin automatically generates tags for you source code.
     link: https://github.com/ludovicchabant/vim-gutentags
