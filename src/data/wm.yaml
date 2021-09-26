@@ -16,10 +16,12 @@ tools:
   - title: ranger
     description: When you use keyboard shortcuts everywhere already, why not use a file manager that supports it?
     link: https://github.com/ranger/ranger
+  - title: picom
+    description: A maintained fork of compton, a window compositor for X
+    link: https://github.com/yshui/picom
   - title: alacritty
     description: I wanted a minimalist terminal manager that is fast, and Alacritty fits the bill.
     link: https://github.com/alacritty/alacritty
   - title: nord color scheme
     description: Nord is my favorite color scheme. I use it for everything.
     link: https://github.com/arcticicestudio/nord
-

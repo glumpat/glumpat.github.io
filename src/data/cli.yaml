@@ -31,9 +31,12 @@ tools:
   - title: enhancd
     description: An improved cd command that uses FZF to make fuzzy cd possible.
     link: https://github.com/b4b4r07/enhancd
-  - title: locality
-    description: I made this myself. Makes loading custom configuration files on different workstations easier.
-    link: https://github.com/hschne/locality
+  - title: jq
+    description: A command line JSON processor.
+    link: https://github.com/stedolan/jq
+  - title: httpie
+    description: A simple, usable HTTP client for the command line.
+    link: https://httpie.io/
   - title: hub
     description: A wrapper around git that makes working with GitHub easier.
     link: https://hub.github.com/

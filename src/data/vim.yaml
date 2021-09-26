@@ -71,7 +71,7 @@ tools:
     description: Nice plugin that improves asterisk searches.
     link: https://github.com/haya14busa/vim-asterisk
   - title: is.vim
-    description:  A small plugin that improves incremental search in an unobstrusive way.
+    description: A small plugin that improves incremental search in an unobstrusive way.
     link: https://github.com/haya14busa/vim-asterisk
   - title: vim gutentags
     description: This helpful plugin automatically generates tags for you source code.
@@ -79,3 +79,6 @@ tools:
   - title: vim tmux navigator
     description: Seamless navigation between Vim and other panes within Tmux.
     link: https://github.com/christoomey/vim-tmux-navigator
+  - title: vimwiki
+    description: VimWiki is a personal wiki for Vim. For diaries, knowledge bases and more.
+    link: https://github.com/vimwiki/vimwiki
